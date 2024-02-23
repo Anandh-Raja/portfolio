@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K Anandh Raja</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to Anandh's Portfolio</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="showHome()">Home</a></li>
+    <li><a href="#" onclick="showProjects()">Projects</a></li>
+    <li><a href="#" onclick="showAbout()">About Me</a></li>
+    <li><a href="#" onclick="showContact()">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home">
+  <h2>Home</h2>
+  <p>As a seasoned Java developer with three years of robust backend experience at Wipro Technologies, I excel in crafting efficient and scalable solutions using a diverse stack of technologies including Core Java, Hibernate, Spring, and Spring Boot. Throughout my tenure, I have demonstrated proficiency in designing and implementing complex systems, ensuring high performance, security, and maintainability.
+
+    My expertise lies in leveraging Spring framework's capabilities to streamline development processes, manage dependencies, and facilitate seamless integration across various modules. Additionally, my proficiency in Hibernate enables me to proficiently manage data persistence layers, ensuring optimal database interactions and performance.
+    
+    I thrive in collaborative environments, adept at communicating technical concepts effectively with cross-functional teams to drive project success. With a keen eye for detail and a passion for delivering high-quality software solutions, I am committed to staying updated with the latest advancements in Java ecosystem, continuously refining my skills to tackle evolving challenges in the field.
+    
+    Overall, I bring a blend of technical expertise, collaborative spirit, and a relentless drive for excellence, making me a valuable asset in any Java development team.</p>
+</section>
+
+<section id="projects" style="display: none;">
+  <h2>Projects</h2>
+  <p>Here are some of the projects I've worked on:</p>
+  <ul>
+    <li>Open API Implementation | Telstra | Bangalore| 06 ‘21 - 03 ‘22
+        Developer- To extend the TMF open API’s TMF 640 and TMF 641 from the TM Forum in order to
+        
+        leverage my skills in Springboot and REST API development.</li>
+        
+        <li>Dubber Portal | Dubber | Bangalore| 06 ‘22 - 09 ‘22
+        Junior Developer - To Identify fulnerabilities post upgrading application version and Fixing the
+        bugs , depreciation warnings after the application upgrade.</li>
+        <li>Dubber Portal | Dubber | Bangalore| 09 ‘22 - 04 ‘23
+        Production Support SME- To Identify client requirements through ITSM tickets and SSH into
+        particular production and provide the details to the end customer as per their requirement.</li>
+       <li> E-Commerce Application Development | UHG | Bangalore| 04 ‘23 - 11 ‘23
+        Team Lead- To Combine all the individual microservices and integrate them into an end-to-end
+        application using Service Registry,API Gateway , Establish reliable communication channels, either
+        through message brokers or HTTP-based protocols, enabling effective communication and coordination
+        between microservices.Developed a Frontend Application for Employee Management Using Angular
+        Framework.</li>
+    
+  </ul>
+</section>
+
+<section id="about" style="display: none;">
+  <h2>About Me</h2>
+  <p>I am a Java developer passionate about creating web innovative solutions.</p>
+</section>
+
+<section id="contact" style="display: none;">
+  <h2>Contact</h2>
+  <p>You can reach me at: anandhraja1030@gmail.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Anandh Raja Krishnamoorthy</p>
+</footer>
+
+<script>
+  function showHome() {
+    hideAllSections();
+    document.getElementById('home').style.display = 'block';
+  }
+  function showProjects() {
+    hideAllSections();
+    document.getElementById('projects').style.display = 'block';
+  }
+  function showAbout() {
+    hideAllSections();
+    document.getElementById('about').style.display = 'block';
+  }
+  function showContact() {
+    hideAllSections();
+    document.getElementById('contact').style.display = 'block';
+  }
+  function hideAllSections() {
+    var sections = document.getElementsByTagName('section');
+    for (var i = 0; i < sections.length; i++) {
+      sections[i].style.display = 'none';
+    }
+  }
+</script>
+
+</body>
+</html>
